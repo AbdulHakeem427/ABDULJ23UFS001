@@ -1,0 +1,45 @@
+body {  
+		background: white url('alice23a.gif') no-repeat 0 0; 
+	
+	padding: 220px 0 0 180px; }
+	@import url('backgroundImageUrl.css');
+	h1 {
+		color: red;
+		font-size: 3em;
+		font-weight: bold;
+	}
+	p {
+		color: rgb(153,153,153);
+		font-family: perpetua, georgia, serif;
+		line-height: 1.5;
+		text-indent: 3em; 
+	}
+
+	.chaptertitle {
+		font-family: perpetua, georgia, serif;
+		font-variant: small-caps;
+		letter-spacing: .1em; 
+	}
+	a.chaptertitle {
+		font-size: 2em;
+		font-style: italic;
+	 }
+	a:link {
+		color: darkred;
+		border-bottom: 1px solid red;
+	 }
+  
+
+	a:visited {
+		color: darkred;
+		border-bottom: 1px dashed red;
+	}
+	
+	a:hover {
+		color: red;
+		border-bottom: 1px solid pink;
+	}
+	a:active {
+		color: pink;
+		border-bottom: 1px solid pink;
+	}

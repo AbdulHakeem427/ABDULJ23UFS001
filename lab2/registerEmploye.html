@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration here</title>
+    <style>
+        body{
+           background-color: lightseagreen;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 300px;
+            height: 400px;
+            display:inline-grid;
+           
+
+        }
+        label{
+            color: rgb(226, 58, 43);
+            
+        }
+        button:hover{
+            background-color: blueviolet;
+            color: antiquewhite;
+
+        }
+        
+    </style>
+    <script>
+        function displayRating(slider) {
+        document.getElementById("ratingValue").innerHTML = slider.value;
+}
+
+    </script>
+
+
+</head>
+<div>
+    <div>
+        <form action="thankyou.html">
+        <label for="fullname">Full Name :</label>
+        <input type="text" name="name" id="fullname"placeholder="Enter Your Full Name" autofocus required/><br>
+        
+        <label for="email">E-Mail :</label>
+        <input type="email" name="name" id="email" placeholder="Enter Your Email" autofocus required/><br>
+        
+        <label for="password">PassWord :</label>
+        <input type="password" name="name" id="password" placeholder="Enter Your PassWord" autofocus required/><br/>
+        
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" name="dateOfBirth" id="dateOfBirth" required /><br/>
+        
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" size="6" min="18" max="120" step="1" value="21" /><br/>
+        
+        <label for="rating">Years of Experience:</label>
+        <input type="range" name="rating" id="rating" min="0" max="100" step="1" value="0" onchange="displayRating(this);"/>
+        <span id="ratingValue">0</span><br/>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" name="phone" id="phone" placeholder="XXX-XXX-XXXX" required /><br/>
+        
+        
+        <button type="submit">Register</button>
+        <p>Fields marked  are required.</p>
+    </form>
+    </div>
+</body>
+</html>
