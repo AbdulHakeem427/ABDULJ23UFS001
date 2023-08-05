@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Sample arcs example</title></head>
+    <body>
+        <canvas id="demoCanvas" width="340" height="340"> canvas</canvas>
+
+        <script>
+            var canvas = document.getElementById('demoCanvas');
+            var ctx = canvas.getContext('2d');
+            var x = 90;
+            var y = 100;
+            var radius = 75;
+            var startAngle = 0;
+            var endAngle = 2 * Math.PI;
+            var counterClockwise = false;
+            ctx.beginPath();
+            ctx.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+            ctx.lineWidth = 10;
+            // line color
+            ctx.strokeStyle = 'blue';
+            ctx.stroke();
+        </script>
+    </body>
+</html>

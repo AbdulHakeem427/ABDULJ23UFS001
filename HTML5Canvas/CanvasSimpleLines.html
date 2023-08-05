@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Draw A Simple Lines Using Canvas</title>
+    </head>
+    
+    <body>
+        <canvas id="drawCanvasLines" height="500" width="200"></canvas>
+        <script>
+            var canvas = document.getElementById('drawCanvasLines');
+            //Always check for properties and methods, to make sure your code doesn't break in other browsers.
+            if (canvas.getContext){
+                var ctx = canvas.getContext("2d");
+                for (i = 10; i < 200; i += 20) {
+                    ctx.moveTo(0, i);
+                    ctx.lineTo(canvas.width, i);
+                    ctx.stroke();
+                }
+                for (i = 10; i <400; i += 20){
+                    ctx.moveTo(i, 0);
+                    ctx.lineTo(i,canvas.width/2);
+                    ctx.stroke();
+                }
+            }
+        </script>
+    </body>
+</html>

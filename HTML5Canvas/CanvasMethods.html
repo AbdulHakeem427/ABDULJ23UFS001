@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>HTML5 Canvas example with various methods</title>
+        <script>
+            window.onload= function(){
+                var rcanvas=document.getElementById("canvasTag");
+                var rcontext=rcanvas.getContext('2d');
+
+                rcontext.fillStyle='rgb(0,0,255)';//Sets the color used for filling an area
+                rcontext.fillRect(0,0,400,400);//Fills a rectangle positioned at x and y,with a width and height of w and h.,
+                
+                rcontext.fillStyle='rgb(0,255,0)';//Sets the color used for filling an area
+                rcontext.fillRect(50,50,200,200);
+
+                rcontext.fillStyle='rgb(255,0,0)';//Sets the color used for filling an area
+                rcontext.fillRect(100,100,100,100);
+
+                rcontext.fillStyle='rgb(10,25,45)';//Sets the color used for filling an area
+                rcontext.fillRect(120,130,50,50);
+
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+        <canvas id="canvasTag" height="500" width="800"></canvas>
+        </div>
+    </body>
+</html>
