@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <audio id="myAudio">
+        <source src="Audio/pasoori.mp3"   type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+        
+    <p>Click the buttons to play or pause the audio.</p>
+    <button onclick="playAudio()" type="button">Play Audio</button>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+    <button onclick="currentTime()" type="button">current time </button>    
+        
+        
+    <script>
+        var x = document.getElementById("myAudio");
+        function playAudio() {
+             x.play();
+        }
+        function pauseAudio() {
+            x.pause();
+        }
+        function currentTime() {
+            x.currentTime();
+            
+        }
+    </script>
+
+
+</body>
+</html>

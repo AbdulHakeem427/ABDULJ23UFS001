@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="Audio/pasoori.mp3"   type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+    var audio=document.querySelector("audio");
+    audio.play(); // play audio
+    audio.pause(); // pause audio
+    audio.paused; // true or false
+    audio.currentTime; // current time of audio
+    audio.duration; // current time of audio
+    audio.volume; // volume of audio
+    </script>
+</body>
+</html>
