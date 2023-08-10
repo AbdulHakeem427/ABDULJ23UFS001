@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="500" height="200"></canvas>
+
+    <script>
+        var canvas=document.getElementById("mycanvas");
+        if(canvas.getContext){
+            var context=canvas.getContext('2d');
+            //reset the 
+            context.beginPath();
+
+            context.moveTo(100,50);
+
+            context.lineTo(50,4);
+
+            context.stroke();
+        }
+    </script>
+</body>
+</html>

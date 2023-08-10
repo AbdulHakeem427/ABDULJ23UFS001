@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            background-color: rgb(238, 238, 238);
+        }
+    
+    </style>
+    
+</head>
+<body>
+    <canvas id="mucanvas" width="650" height="600" style="background-color: aqua;"></canvas>
+
+    <script>
+        var canvas=document.getElementById("mucanvas");
+        if (canvas.getContext){
+            var ctx=canvas.getContext("2d");
+             ctx.beginPath();
+            ctx.rect(100,90,100,100);
+            ctx.fillStyle='green';
+            ctx.fill();
+
+            ctx.globalCompositeOperation='xor';
+
+            ctx.beginPath();
+            ctx.arc(100,100,60,0,2*Math.PI,false);
+            ctx.fillStyle='red';
+            ctx.fill();
+
+            
+        }
+    </script>
+</body>
+</html>

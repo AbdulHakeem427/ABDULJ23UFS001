@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Basic Animation with Canvas example</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="300">
+    If you can see this, your browser does not support Canvas
+</canvas>
+<script>
+    var canvas;
+    var ctx;
+    var x = 400;
+    var y = 300;
+    var dx = 2;
+    var dy = 4;
+    var width = 400;
+    var height = 300;
+    function circle(x,y,r) {
+        ctx.beginPath();
+        ctx.arc(x, y, r, 0, Math.PI*2, true);
+        ctx.fill();
+    }
+    function rect(x,y,w,h) {
+        ctx.beginPath();
+        ctx.rect(x,y,w,h);
+        ctx.closePath();
+        ctx.fill();
+    }
+    function reset() {
+        ctx.clearRect(0, 0, width, height);
+    }
+    function init() {
+        canvas = document.getElementById("canvas");
+        ctx = canvas.getContext("2d");
+        return setInterval(animate, 10);
+    }
+    function animate() {
+        reset();
+        ctx.fillStyle = "yellow";
+        rect(0,0,width,height);
+
+        ctx.fillStyle = "green";
+        circle(x, y, 10);
+    if (x + dx > width || x + dx < 0)
+        dx = -dx;
+    if (y + dy > height || y + dy < 0)
+        dy = -dy;
+        x += dx;
+        y += dy;
+    }
+    init();
+</script>
+</body>
+</html>
