@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.navbar{
+    margin:15px;
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    background-color:cadetblue;
+    
+}
+.navar i{
+    padding: 0px;
+}
+header, footer, main, section {
+    margin:0px;
+    padding: 0px;
+    border: 1px solid #ddd;
+    
+}
+
+header, footer {
+    background-color: rgb(192, 233, 9);
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+.left-side label {
+      margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.left-side img {
+    max-width: 100%; /* Ensure the image does not exceed its container */
+    height: 800px;
+}
+.left-side  {
+    margin:15px ;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+/* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    width: 20%; /* Adjust as needed */
+    height: auto;
+}
+.middle-side{
+    margin: 2px;
+    padding: 2px;
+    width: 80%;
+    height: 1200px;
+}
+.right-side{
+    margin:15px ;
+    padding: 5px;
+    width: 20%;
+    height: auto;
+
+}
+.right-side img{
+    width: 300px;
+    height: 1050px;
+}
+
+label{
+    height:250px ;
+}
+.image-container {
+position: relative;
+max-width: 100%; /* Ensure the container is responsive */
+height: 1050px;
+}
+
+.image-container img {
+width: 100%; /* Make the image fill the container */
+height: 1050px;
+display: block; /* Remove any extra space below the image */
+}
+
+.text-overlay {
+position: absolute;
+top: 50%; /* Position at the vertical center */
+left: 50%; /* Position at the horizontal center */
+transform: translate(-50%, -50%); /* Center the overlay */
+text-align: center;
+color: white; /* Text color */
+}
+
+.text-overlay h2 {
+font-size: 2em;
+margin-bottom: 10px;
+}
+
+.text-overlay p {
+font-size: 1.2em;
+margin: 0;
+}
+
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Footer Styles */
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 20px;
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-logo img {
+max-width: 100px; /* Adjust the size as needed */
+}
+
+.footer-logo h1 {
+color: #fff;
+font-size: 1.5em;
+margin-bottom: 10px;
+}
+
+.footer-social a {
+color: white;
+text-decoration: none;
+margin-right: 15px;
+font-size: 1.5em;
+}
+
+.footer-bottom {
+margin-top: 20px;
+}
+
+/* Hover effect on social media icons */
+.footer-social a:hover {
+color: #ffcc00; /* Change the color on hover */
+}

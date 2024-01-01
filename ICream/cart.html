@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICreame</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style2.css">
+ 
+</head>
+
+<body>
+  <!-- <div class="navbar">
+    <a href="main.html">
+      <h2>ICream</h2>
+    </a>
+   <a href="cart.html"> 
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+
+  </div> -->
+  <header>
+    <div class="navbar">
+        <a href="index.html">
+            <h2>ICream</h2>
+        </a>
+
+        <!-- Home Button -->
+        <a href="index.html">
+            <div class="nav-button">
+                <i class="bi bi-house"></i>
+                <span>Home</span>
+            </div>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchItems()"><i class="bi bi-search"></i></button>
+        </div>
+
+        <!-- About Button -->
+        <a href="about.html">
+            <div class="nav-button">
+                <i class="bi bi-info-circle"></i>
+                <span>About</span>
+            </div>
+        </a>
+
+        <!-- Login/Logout Button -->
+        <div class="nav-button" id="loginButton" onclick="toggleLogin()">
+            <i class="bi bi-person"></i>
+            <span id="loginText">Login</span>
+        </div>
+
+        <!-- Cart Button -->
+        <a href="cart.html">
+            <div class="cart">
+                <i class="bi bi-cart2"></i>
+                <div id="cartAmount" class="cartAmount">0</div>
+            </div>
+        </a>
+    </div>
+</header>
+  <main>
+  
+<section class="middle-side">
+  <div id="label" class="text-center"></div>
+
+  <div class="shopping-cart" id="shopping-cart"></div>
+</section>
+  <section class="right-side">
+    
+</section>
+</main>
+
+   <!-- Footer -->
+   <footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="your-logo.png" alt="Logo">
+            <h1>Icream </h1>
+        </div>
+        
+        <div class="footer-social">
+            
+           <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+                <span class="sr-only">Instagram</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="#" target="_blank" rel=" noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span class="sr-only">GitHub</span>
+            </a>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 Icream. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+<script src="js/Data.json"></script>
+<script src="js/cart.js"></script>
+
+
+
+
+</html>
